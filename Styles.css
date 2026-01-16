@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --rood: #8f001a;
+    --wit: #ffffff;
+}
+
+
+body {
+    background-color: var(--rood);
+    color: var(--wit);
+    min-height: 100vh;
+}
+
+
+.nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* lijn onder nav */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;   /* DIT IS DE SLEUTEL */
+}
+
+.nav-left a {
+    color: var(--wit);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-right a {
+    color: var(--wit);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+.icon {
+    width: 16px;
+}
+
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 160px;
+    font-weight: 400;
+    letter-spacing: 10px; /* meer ruimte tussen letters */
+    margin-bottom: 30px;
+}
+
+
+
+.name h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 200;
+    border-top: 1px solid var(--wit);
+    padding-top: 3px;
+}
+
+.subtitle span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
