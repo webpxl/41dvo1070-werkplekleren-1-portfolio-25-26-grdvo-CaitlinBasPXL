@@ -22,22 +22,22 @@ body {
 
 
 .nav {
-    padding: 20px 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* lijn onder nav */
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;   /* DIT IS DE SLEUTEL */
+    width: 100%;
 }
 
 .nav-left a {
     color: var(--wit);
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -53,7 +53,7 @@ nav {
     color: var(--wit);
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
@@ -101,4 +101,63 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     letter-spacing: 1.5px;
+}
+
+/* OVER MIJ SECTIE */
+.about {
+    background-color: #f8f1e6; /* lichte beige tint */
+    padding: 100px 40px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* TEKST */
+.about-text {
+    flex: 1;
+    color: #8f001a;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #8f001a;
+    margin-top: 8px;
+}
+
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+/* AFBEELDING */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
 }
