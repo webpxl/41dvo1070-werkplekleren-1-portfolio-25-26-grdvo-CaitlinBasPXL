@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -117,7 +120,7 @@ nav {
     align-items: flex-start;
 }
 
-/* TEKST */
+
 .about-text {
     flex: 1;
     color: #8f001a;
@@ -134,7 +137,7 @@ nav {
 .about-text h2::after {
     content: "";
     display: block;
-    width: 80px;
+    width: 200px;
     height: 2px;
     background-color: #8f001a;
     margin-top: 8px;
@@ -148,7 +151,7 @@ nav {
     max-width: 500px;
 }
 
-/* AFBEELDING */
+
 .about-image {
     flex: 1;
     display: flex;
@@ -160,4 +163,157 @@ nav {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     object-fit: cover;
+}
+
+
+.project {
+    background-color: #8f001a;
+    padding: 100px 40px;
+    color: #ffffff;
+}
+
+.project-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.project-title::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 12px;
+}
+
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.project-images {
+    display: flex;
+    gap: 20px;
+}
+
+.project-images img {
+    width: 250px;
+    border-radius: 14px;
+    object-fit: cover;
+
+    /* DROP SHADOW NAAR LINKS */
+    box-shadow: -15px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Tekst */
+.project-text {
+    max-width: 420px;
+}
+
+.project-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.project-2 {
+    background-color: #f8f1e6;
+    padding: 100px 40px;
+    color: #8f001a;
+}
+
+.project-2-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+
+.project-2 .project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.project-2 .project-title::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #8f001a;
+    margin-top: 12px;
+}
+
+
+.project-2 .project-text {
+    max-width: 420px;
+}
+
+.project-2 .project-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+.project-visuals {
+    display: flex;
+    gap: 20px;
+}
+
+.project-visuals img {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+.project-visuals > img {
+    width: 300px;
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.project-visuals-small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-visuals-small img {
+    width: 200px;
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project-images-3 {
+    display: flex;
+    gap: 20px;
+}
+
+.project-images-3 img {
+    width: 500 px;
+    border-radius: 14px;
+    object-fit: cover;
+
+
+    box-shadow: -15px 10px 30px rgba(0, 0, 0, 0.5);
 }
